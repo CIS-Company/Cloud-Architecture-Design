@@ -16,3 +16,8 @@ Security Group rules
 
 
 Commit topology images and other visuals to the repo and link them on the README.md file.
+
+
+System Diagrams
+Create some initial diagrams of any aspects of your solution that you can plan at this stage. Examples include topologies, network diagrams and process flow charts.
+Link these assets in your GitHub Documentation repo for review during daily stand-ups.
