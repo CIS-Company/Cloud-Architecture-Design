@@ -12,3 +12,7 @@ Include a table or chart of network infrastructure and configuration details (ye
 Subnets and their uses
 Include Subnet Masks, CIDR addresses, etc.
 Security Group rules
+
+
+
+Commit topology images and other visuals to the repo and link them on the README.md file.
