@@ -13,7 +13,7 @@ Amazon GuardDuty
 
 
 
-![SilverLine Security Diagram](https://github.com/SilverLine-Security/Topologies/blob/main/SilverLine%20Security%20Network%20Diagram%20.png)
+![SilverLine Security Diagram](https://github.com/SilverLine-Security/Topologies/blob/main/SilverLine%20Security%20Network.png)
 
 (need to be included still)
 Include a table or chart of network infrastructure and configuration details (yes, this will overlap with your topology -- you must document your network in both ways):
