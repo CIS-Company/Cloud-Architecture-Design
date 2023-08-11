@@ -79,14 +79,15 @@ Our client has articulated several needs to prioritize when designing their clou
 
 | Network Element Name | Description | IP Address (CIDR) | Operating System (OS) | ID |
 |:----------------:|:---------------:|:---------------:|:---------------:|:----:|
-| 10Globex VPC | Globex Corporate Network | 10.0.0.0/16 | AWS VPC | vpc-03c429b1e9fefca02
-| GX Public subnet | Globex DMZ1 |10.0.1.0/24 | AWS VPC | subnet-0858c6b0d8519d865  
-| GX Private subnet | Globex Internal | 10.0.3.0/24 | AWS VPC | subnet-032a266835b02d8b8
-| Globex IGW | Unsecured Internet Connection | IGW IP address | AWS IGW | igw-011a8bf616b568d43
-| Globex VGW | Globex Secure Connection (VPN) | VGW IP address | AWS VPG | vgw-070362c6caaaf9a5d
-| Globex EC2-1 | Public subnet instance | 10.0.1.137 / 3.88.248.166 [Public IP] | AWS EC2 (AMI  Linux) | i-07b5a5c9c950cb2a9 | 
-| Globex EC2-2 | Private subnet instance | 10.0.221.100 | AWS EC2 (AMI Linux) |
-| Globex Domain Controller | Active Server Directory | Server IP address | Windows 19 Server 
+| SLSec VPC | SilverLine Security VPC | 10.0.0.0/16 | AWS VPC | vpc-03c429b1e9fefca02
+| SLSec Public subnet | SilverLine Security DMZ1 |10.0.1.0/24 | AWS VPC | subnet-0858c6b0d8519d865  
+| SLSec Private subnet | SilverLine Security Internal | 10.0.3.0/24 | AWS VPC | subnet-032a266835b02d8b8
+| SLSec IGW | SilverLine Security Internet Connection | IGW IP address | AWS IGW | igw-011a8bf616b568d43
+| SLSec NAT GW | SilverLine Security NAT Gateway | VGW IP address | AWS VPG | vgw-070362c6caaaf9a5d
+| SLSec UbuntuSrv (Hardened) | Ubuntu Server (PII-PCI) | 10.0.1.137 / 3.88.248.166 [Public IP] | AWS EC2 (AMI  Linux) | i-07b5a5c9c950cb2a9 | 
+| SLSec Ubuntu RevProx1 | Ubuntu Reverse Proxy Server1 | 10.0.221.100 | AWS EC2 (AMI Linux) |
+| SLSec Ubuntu RevProx2 | Ubuntu Reverse Proxy Server2 | 10.0.221.100 | AWS EC2 (AMI Linux) |
+| SLSec Win19SrvDC | Windows 19 Server Domain Controller | Active Server Directory | Server IP address | Windows 19 Server 
 
 ### AWS Security Group1 (Private Subnet to Public Subnet)
 
