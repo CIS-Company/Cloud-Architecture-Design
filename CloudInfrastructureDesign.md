@@ -6,40 +6,28 @@
 
 ## Needs and Impact
 
-## Needs
+## Client Stated Priorities & Needs
 
 Our client has articulated several needs to prioritize when designing their cloud architecture:
 
 * Compliance - Maintain continuous demonstrable compliance with the National Institute of Standards and Technology's Special Publication 800-53 (NIST 800-53)
 * Logging - Deliver a secure and reliable means of accessing their systems. Using industry best practices, design a access control model that protects the organization against privilege creep, minimizes the effect that a single insider threat may have on the infrastructure, and implement processes that suitably manage sensitive permission sets to provide least privilege. 
 
- * Availability - Our chosen solution must also ensure all elements of our company are connected to each other.
+ * Monitoring - Our chosen solution must also ensure all elements of our company are connected to each other to facilitate monitoring.
        
- * Security - The influence and presence that Globex exerts worldwide lends itself to becoming the subject of attacks by hacktivists and APTs not only to elicit profit via ransomeware attacks but also to invade our systems and persist to perform espionage and sabotage at opportune times. Security is paramount and consistent measures to Identify and Authenticate are needed to verify that personnel are who they represent themselves to be. 
-
- * Flexibility - Our proposed system must also provide the maximum level of flexibility and independence so our Individual Business Units (IBUs) may operate in an environment of a high degree of autonomy.
-
- * Management -  Globex will maintain control and coordination with all entities and guests (contractors). Out of band solutions are encouraged to maintain positive control of all elements.
+ * Threat Detection and Response - Security is imperative to the reliability of our client organization and providing consistent measures to create a comprehensive defense in depth are critical to safeguarding customer data.
 
 ## Methodology
-  ### Analyze Requirements
+### Analyze Requirements
      
   * Transitioning Partner former Infrastructure
 
-     When conducting a transition of assets from a partner, it is essential that Globex identify what elements will ultimately be incorporated into our company infrastructure and what elements will be archived. 
+     While the client does have data to transition, there is no current cloud infrastructure to transfer from. SilverLine will be designing and implementing a complete custom solution 
 
-     * Globex Network Architecture Personnel will identify all:
-
-        * On Premise Facilities
-        * Cloud Architecture
-        * VPN 
-        
-      and supervise the migration of apporoved aspects to Globex Network Architecture
-
- ### Logical Network Design
+ ### Logical CLoud Architecture Design
     
-  1. Globex Infrastrucutre Elements:
-     * **Globex Cloud (via AWS VPC) - Globex's Corporate Cloud (GCC)***: Globex elects to choose a cloud model for its secured infrastructure to meet its stated need to be highly elastic and rapidly scalable.
+  1. Client Organizational Virtual Private Cloud:
+     * **(via AWS VPC)**: Globex elects to choose a cloud model for its secured infrastructure to meet its stated need to be highly elastic and rapidly scalable.
 
        * Create subnets - Subnetting is a security measure related to the "*Defense in Depth*" concept. The creation of subnets allows leveraging of firewalls (represented here by the element of "Security Groups") to manage authorized communication between the subnets.
      
