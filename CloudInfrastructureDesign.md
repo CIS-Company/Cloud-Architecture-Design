@@ -53,16 +53,16 @@ Our client has articulated several needs to prioritize when designing their clou
              * **Center for Internet Security (CIS) Hardened Servers (Ubuntu and Windows)**
                 Endpoints in placed in the Private Subnet area are likely to be an organization's most valuable assets. Resources here are the focus of protection as we greatly value both our client's internal business practices and intellectual property and the trust they have been allocated to safeguard their consumer data.
 
-  2. Existing Cloud Architectural Details (Globex)
+  2. Existing Cloud Architectural Details 
 
-| Cloud Architecture Element Name | Description | IP Address (CIDR) | Operating System (OS) | ID |
-|:----------------:|:---------------:|:---------------:|:---------------:|:----:|
+| Cloud Architecture Element Name | Description | Public IPv4 Address | Private IPv4 Address | Operating System (OS) | ID |
+|:----------------:|:---------------:|:---------------:|:---------------:|:----:|:----------|
 | SLSec VPC | SilverLine Security VPC | 10.0.0.0/16 | AWS VPC | vpc-03c429b1e9fefca02
 | SLSec Public subnet | SilverLine Security DMZ1 |10.0.1.0/24 | AWS VPC | subnet-0858c6b0d8519d865  
 | SLSec Private subnet | SilverLine Security Internal | 10.0.3.0/24 | AWS VPC | subnet-032a266835b02d8b8
 | SLSec IGW | SilverLine Security Internet Connection | IGW IP address | AWS IGW | igw-011a8bf616b568d43
 | SLSec NAT GW | SilverLine Security NAT Gateway | VGW IP address | AWS VPG | vgw-070362c6caaaf9a5d
-| SLSec UbuntuSrv (Hardened) | Ubuntu Server (PII-PCI) | 10.0.1.137 / 3.88.248.166 [Public IP] | AWS EC2 (AMI  Linux) | i-07b5a5c9c950cb2a9 | 
+| SLSec UbuntuSrv (Hardened) | Ubuntu Server (PII-PCI) | 34.222.184.96 | AWS EC2 (AMI  Linux) | i-07b5a5c9c950cb2a9 | 
 | SLSec Ubuntu RevProx1 | Ubuntu Reverse Proxy Server1 | 10.0.221.100 | AWS EC2 (AMI Linux) |
 | SLSec Ubuntu RevProx2 | Ubuntu Reverse Proxy Server2 | 10.0.221.100 | AWS EC2 (AMI Linux) |
 | SLSec Win19SrvDC | Windows 19 Server Domain Controller | Active Server Directory | Server IP address | Windows 19 Server 
@@ -76,14 +76,6 @@ Our client has articulated several needs to prioritize when designing their clou
 | Allow | 0.0.0.0/0 | 0.0.0.0/0 | - | ICMP | ICMP
 
   
-  3. Existing Logical Network Element Details (GreenGenius)
-
-| Network Element Name | Description | IP Address (CIDR) | Operating System (OS) | ID |
-|:----------------:|:---------------:|:---------------:|:---------------:|:----:|
-| GreenGenius VPC | GreenGenius VPC | 172.31.0.0/16 | AWS VPC | vpc-0f78af57f6ecb08e6
-| GreenGenius EC2-3 | GreenGenius Endpoint | 172.31.10.122 / 44.201.2.52 [Public IP] | AWS EC2 (AMI Linux) | 1-0c7c98f557a995e27
-| GreenGenius CGW | GreenGenius Customer Gateway | BGP ASN 65000 / 44.201.2.52 [Public IP] | AWS CGW | cgw-00b24a574063b5f6d
-
   
 ## Physical Network Design
     
