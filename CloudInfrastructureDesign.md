@@ -24,7 +24,7 @@ Our client has articulated several needs to prioritize when designing their clou
 
      While the client does have data to transition, there is no current cloud infrastructure to transfer from. SilverLine will be designing and implementing a complete custom solution 
 
- ### Logical CLoud Architecture Design
+ ### Logical Cloud Architecture Design
     
   1. Client Organizational Virtual Private Cloud **(via AWS VPC)**: SilverLine elects to employ Amazon Web Services' Virtual Private CLoud offering because of a market-leading Identity Access Management capability and robust monitoring options.
 
@@ -50,12 +50,10 @@ Our client has articulated several needs to prioritize when designing their clou
 
          2. "Private Subnet" (Qty 1) - Our private subnet will host our clients assets that maintain their consumer and company data.  
 
-             * **Hardened **
-         * As stated before, endpoints in the Public Subnet area are likely to be Functional Servers (e.g. web servers, file servers, redundant servers, etc.), but the endpoints here could also be proxies, or remote Globex users connecting through the **Virtural Private Gateway**. Resources here can be further subnetted to support sandboxes, quarantine zones for incident response, and even guest access to Internet (in waiting rooms, lobbies, etc.)
+             * **Center for Internet Security (CIS) Hardened Servers (Ubuntu and Windows)**
+                Endpoints in placed in the Private Subnet area are likely to be an organization's most valuable assets. Resources here are the focus of protection as we greatly value both our client's internal business practices and intellectual property and the trust they have been allocated to safeguard their consumer data.
 
-      
-
-  2. Existing Logical Network Element Details (Globex)
+  2. Existing Cloud Architectural Details (Globex)
 
 | Cloud Architecture Element Name | Description | IP Address (CIDR) | Operating System (OS) | ID |
 |:----------------:|:---------------:|:---------------:|:---------------:|:----:|
