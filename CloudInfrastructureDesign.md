@@ -68,7 +68,7 @@ Our client has articulated several needs to prioritize when designing their clou
 | SLSec Win19SrvDC | Windows 19 Server Domain Controller | 34.210.191.221 | 172.31.26.31 | AWS EC2 | i-025790da0391f60dc
 | SLSec Win19RevProx 1 | Windows Reverse Proxy Server 1 | 54.149.175.161 | 172.31.5.63 | AWS EC2 | i-0d62c7c37e861b019
 | SLSec Win19RevProx 2 | Windows Reverse Proxy Server 2 | 18.237.148.68 | 172.31.14.0 |AWS EC2 | i-037138e927f3ee3ec
-| SLSec Open VPN | VPC VPN connection | 34.222.184.96 | 172.31.54.119 | AWS EC2 | 
+| SLSec Open VPN | VPC VPN connection | 34.222.184.96 | 172.31.54.119 | AWS EC2 | i-08acb5b9936d5df13
  
 
 ## Physical Network Design
