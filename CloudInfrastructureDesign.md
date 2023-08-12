@@ -42,13 +42,13 @@ Our client has articulated several needs to prioritize when designing their clou
               
               * **Security Groups (SGs)** allow for assets located in the "Public Subnet" to access the Internet. In this regard, they function primarly as firewalls (at the Instance-level) enforcing rules set to allow or deny certain types of traffic. Here we have the **RevProx-SG** - configured on the Public Subnet for the reverse proxies.
 
-              * Reverse Proxies (Qty 4) in the Public Subnet allow requests from the Internet to be fielded by these servers instead of communicating directly with the sensitive data on the protected servers in the private subnet. In this manner, the proxies form yet another layer of protection. The implementation of two of them for each server in the Private Subnet provides for increased availability and performance (load balancing)
+              * **Reverse Proxies** (Qty 4) in the Public Subnet allow requests from the Internet to be fielded by these servers instead of communicating directly with the sensitive data on the protected servers in the private subnet. In this manner, the proxies form yet another layer of protection. The implementation of two of them for each server in the Private Subnet provides for increased availability and performance (load balancing)
 
             2. **Internet Gateway (SLSec IGW)** (Qty 1) - This is the primary means of connecting the DMZ to the Internet. The Public Subnet uses the Globex IGW as a security boundary. While not the most secure form of connection, an IGW is still a point at which further measures (e.g. Intrusion Detection Systems or Intrusion Prevention Systems may be deployed for further security.)
              
                * **Virtual Private Network (VPN)-**  A more secure means of connecting to the DMZ is by **VPN**, which will connect here via the ***Transit Gateway (TGW)*** to enhance security by obscuring traffic through the VPN. Traffic will also be encrypted so that data "in transit" keeps consumer data safeguarded. 
 
-         2. "Private Subnet" (Qty 1) - Our private subnet will host our clients assets that maintain their consumer and company data.  
+           3. **SLSec Private Subnet** (Qty 1) - Our private subnet will host our clients assets that maintain their consumer and company data.  
 
              * **Center for Internet Security (CIS) Hardened Servers (Ubuntu and Windows)**
                 Endpoints in placed in the Private Subnet area are likely to be an organization's most valuable assets. Resources here are the focus of protection as we greatly value both our client's internal business practices and intellectual property and the trust they have been allocated to safeguard their consumer data.
