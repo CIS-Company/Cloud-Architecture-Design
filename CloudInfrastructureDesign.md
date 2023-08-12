@@ -57,15 +57,19 @@ Our client has articulated several needs to prioritize when designing their clou
 
 | Cloud Architecture Element Name | Description | Public IPv4 Address | Private IPv4 Address | Operating System (OS) | ID |
 |:----------------:|:---------------:|:---------------:|:---------------:|:----:|:----------|
-| SLSec VPC | SilverLine Security VPC | 10.0.0.0/16 | AWS VPC | vpc-03c429b1e9fefca02
-| SLSec Public subnet | SilverLine Security DMZ1 |10.0.1.0/24 | AWS VPC | subnet-0858c6b0d8519d865  
-| SLSec Private subnet | SilverLine Security Internal | 10.0.3.0/24 | AWS VPC | subnet-032a266835b02d8b8
-| SLSec IGW | SilverLine Security Internet Connection | IGW IP address | AWS IGW | igw-011a8bf616b568d43
-| SLSec NAT GW | SilverLine Security NAT Gateway | VGW IP address | AWS VPG | vgw-070362c6caaaf9a5d
-| SLSec UbuntuSrv (Hardened) | Ubuntu Server (PII-PCI) | 34.222.184.96 | AWS EC2 (AMI  Linux) | i-07b5a5c9c950cb2a9 | 
-| SLSec Ubuntu RevProx1 | Ubuntu Reverse Proxy Server1 | 10.0.221.100 | AWS EC2 (AMI Linux) |
-| SLSec Ubuntu RevProx2 | Ubuntu Reverse Proxy Server2 | 10.0.221.100 | AWS EC2 (AMI Linux) |
-| SLSec Win19SrvDC | Windows 19 Server Domain Controller | Active Server Directory | Server IP address | Windows 19 Server 
+| SLSec VPC | SilverLine Security VPC | 172.31.0.0/16 | N/A |AWS VPC | vpc-064db35c71b2b7c9e | 
+| SLSec Public subnet | SilverLine Security DMZ1 | 172.31.0.0/20 | N/A |AWS VPC | subnet-06ef193843ec12809  
+| SLSec Private subnet | SilverLine Security Private | 172.31.48.0/20 | N/A |AWS VPC | subnet-05e26d69270db4ef5
+| SLSec IGW | SilverLine Security Internet Connection | N/A |  |AWS IGW | igw-0bfc1c3d8e5e09c4d
+| SLSec NAT GW | SilverLine Security NAT Gateway | 35.83.136.231 | 172.31.12.32 |AWS NAT | nat-023c11e00248a3578
+| SLSec UbuntuSrv (Hardened) | Ubuntu Server (PII-PCI) | 34.222.184.96 | 172.31.54.119 | AWS EC2 | i-024ce2e221b5aeea8
+| SLSec Ubuntu RevProx 1 | Ubuntu Reverse Proxy Server 1 | 52.88.45.109 | 172.31.2.151 | AWS EC2 | i-024bdf23631a40305
+| SLSec Ubuntu RevProx 2 | Ubuntu Reverse Proxy Server 2 | 18.237.129.183 | 172.31.12.226 | AWS EC2 | i-066eeba0e5f6afe01
+| SLSec Win19SrvDC | Windows 19 Server Domain Controller | 34.210.191.221 | 172.31.26.31 | AWS EC2 | i-025790da0391f60dc
+| SLSec Win19RevProx 1 | Windows Reverse Proxy Server 1 | 54.149.175.161 | 172.31.5.63 | AWS EC2 | i-0d62c7c37e861b019
+| SLSec Win19RevProx 2 | Windows Reverse Proxy Server 2 | 18.237.148.68 | 172.31.14.0 |AWS EC2 | i-037138e927f3ee3ec
+| SLSec Open VPN | VPC VPN connection | 34.222.184.96 | 172.31.54.119 | AWS EC2 | i-08acb5b9936d5df13
+ 
 
 ### AWS Security Group1 (Private Subnet to Public Subnet)
 
@@ -87,5 +91,11 @@ Our client has articulated several needs to prioritize when designing their clou
 
   1. Yearly Assessments of this Cloud Infrastructure Design Statement will be conducted to keep pace with emerging trends, threats and opportunities to reduce client attack surface and safeguard consumer data.
 
+## Notional Elements of Note (Not to be included with the Cloud Architectural Design)
+
+| Element Name | Description | Public IPv4 Address | Private IPv4 Address | Operating System (OS) | ID |
+|:----------------:|:---------------:|:---------------:|:---------------:|:----:|:----------------|
+| Kali Linux OS | SilverLine Red Team Instance | 52.89.109.34 | 172.31.46.47 | Kali Linux | i-0aba6bf21f371897c |
+| Strat RedTeam Attack | SilverLine Red Team Subnet | 172.31.32.0/20 | N/A | N/A | subnet-09baef25065a7fac0 |
 ## Version Control:
 * 08/11/2023 - Ben Hobbs
