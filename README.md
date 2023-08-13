@@ -54,14 +54,6 @@ Our AWS infrastructure architecture is designed to ensure a resilient, secure, a
 For detailed setup instructions, configurations, and specific use cases, please refer to our comprehensive documentation or contact our technical support team.
 
 
+# Additional Links
+[Cloud Architecture Design Statement](https://github.com/SilverLine-Security/Topologies/blob/main/CloudInfrastructureDesign.md)
 
-
-(need to be included still)
-Include a table or chart of network infrastructure and configuration details (yes, this will overlap with your topology -- you must document your network in both ways):
-Subnets and their uses
-Include Subnet Masks, CIDR addresses, etc.
-Security Group rules
-
-
-
-Link these assets in your GitHub Documentation repo for review during daily stand-ups.
